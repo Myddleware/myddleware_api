@@ -3,12 +3,12 @@
 
 echo '<pre>';
 // Login to COMET test
-$url = 'http://localhost/myddleware/web/api/v1_0/';
+$url = 'my endpoint'; " eg : http://localhost/myddleware/web/api/v1_0/
 
 include_once 'myddlewareApi.php';
 
 $myddlewareApi = new myddlewareApi($url);
-$login = $myddlewareApi->login('admin', 'Recette?1');
+$login = $myddlewareApi->login('my_login', 'my_password');
 print_r($login);
 
 $function = 'synchro';
